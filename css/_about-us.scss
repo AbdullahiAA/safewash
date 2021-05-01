@@ -1,0 +1,40 @@
+#about-us {
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+
+    .about-us__content {
+        h3 {
+            text-align: left;
+            color: #795A69;
+            margin-bottom: 16px;
+        }
+
+        p {
+            line-height: 204.18%;
+            color: #776E70;
+            margin-bottom: 30px;
+        }
+    }
+
+    .about-us__img-container {
+        position: relative;
+
+        .about-us__img {
+            height: 650px;
+        }
+
+        .about-us__img-vector {
+            position: absolute;
+            left: -5px;
+            bottom: 0;
+            width: 500px;
+            z-index: -1;
+        }
+    }
+}

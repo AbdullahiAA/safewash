@@ -1,0 +1,65 @@
+#features {
+    background-color: white;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(131.41deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 15.33%, rgba(255, 210, 231, 0.9) 35.21%, rgba(254, 168, 208, 0.9) 51.11%, rgba(254, 166, 207, 0.9) 69.85%, rgba(255, 255, 255, 0.9) 98.24%, rgba(255, 255, 255, 0.9) 109.03%), url("../assets/img/BQ\ Safewash\ baby\ blurred\ out\ 2\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: -340px;
+
+    .container {
+        padding-top: 144px;
+    }
+
+    .features__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 56px;
+        margin-top: 70px;
+
+        div:first-child {
+            grid-row: 1/3;
+        }
+
+        div:last-child {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+    }
+
+    .features__item {
+        img {
+            margin-bottom: 8px;
+            width: 54px;
+            height: 54px;
+        }
+        
+        h4 {
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        &:nth-child(2) h4 {
+            color: $blue;
+        }
+
+        &:nth-child(3) h4 {
+            color: $green;
+        }
+
+        &:nth-child(4) h4 {
+            color: #02998A;
+        }
+
+        &:nth-child(5) h4 {
+            color: #9D3E89;
+        }
+
+        p  {
+            color: #483D3F;
+            max-width: 504px;
+            line-height: 161.68%;
+            font-weight: 600;
+        }
+    }
+}

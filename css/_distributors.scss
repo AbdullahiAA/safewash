@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'BR Firma';
+    font-style: normal;
+    font-weight: normal;
+    src: local('BR Firma Bold'), url('BR Firma Bold.woff') format('woff');
+}
+
+#top-distributors {
+    text-align: center;
+
+    .container {
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+
+    .top-distributors__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 10px;
+        margin-top: 130px;
+        margin-bottom: 75px;
+        position: relative;
+
+        .top-distributors__blur-bg {
+            position: absolute;
+            width: 288px;
+            height: 287px;
+            left: 186px;
+            top: 18px;
+            z-index: -1;
+            background: #FE96C6;
+            filter: blur(451px);
+        }
+
+        .top-distributors__bubbles {
+            position: absolute;
+            left: 10px;
+
+            img {
+                position: absolute;
+                background-blend-mode: screen;
+                mix-blend-mode: screen;
+                z-index: 1;
+
+                &:nth-child(1) {
+                    left: 217px;
+                }
+                &:nth-child(2) {
+                    left: 217px;
+                }
+                &:nth-child(3) {
+                    left: 217px;
+                }
+            }
+        }
+    }
+
+    .distributors-card__item {
+        background-color: white;
+        padding: 30px;
+        border-radius: 12px;
+        max-width: 293px;
+        width: 100%;
+        height: 360px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 31px #F4F4F9;
+
+        &:nth-child(1) .distributor-img {
+            border: 4px solid $green;
+        }
+        
+        &:nth-child(2) .distributor-img {
+            border: 4px solid $blue;
+        }
+        
+        &:nth-child(3) .distributor-img {
+            border: 4px solid $darkPink;
+        }
+
+        
+        .distributor-img {
+            border-radius: 50%;
+            width: 188px;
+            height: 188px;
+            position: absolute;
+            top: -76px;
+            left: 45%;
+            transform: translateX(-50%);
+        }
+        
+        img {
+            width: 102%;
+            height: 102%;
+            position: relative;
+            left: 8px;
+        }
+
+        h4 {
+            color: $green;
+            font-family: "BR Firma", sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 204.18%;
+            margin-bottom: 12px;
+            margin-top: 100px;
+
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 14px;
+            color: #776E70;
+            line-height: 161.68%;
+            margin-bottom: 12px;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            background: $blue;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            color: #FFFFFF;
+            padding: 8px 26px;
+            margin: 0px 220px;
+        }
+    }
+
+    .btn {
+        margin: 34px 0px;
+    }
+}

@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'cocon';
+    src: url('../assets/fonts/cocon-bold.otf') format('otf'), 
+    url('../assets/fonts/cocon-bold.woff2') format('woff2'), 
+    url('../assets/fonts/cocon-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#hero {
+    height: 1123px;
+    position: relative;
+    padding-top: 96px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(213.01deg, #FFFFFF 4.13%, rgba(254, 150, 198, 0.5) 80.31%);
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        padding-top: 96px;
+        padding-bottom: 100px;
+    }
+
+    .hero__content {
+        h1 {
+            font-family: 'cocon', sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 70px;
+            color: $normalPink;
+            max-width: 701px;
+            margin-bottom: 26px;
+        }
+
+        h2 {
+            font-family: Open Sans;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 70px;
+            color: transparent;
+            -webkit-text-stroke: 1px $normalPink;
+            max-width: 678px;
+            margin-bottom: 23px;
+        }
+    }
+
+    .hero__carousels {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 15px;
+        margin-top: 34px;
+
+        .carousel {
+            display: inline-block;
+            height: 16px;
+            width: 16px;
+            border: 1px solid $normalPink;
+            border-radius: 50%;
+
+            &.active {
+                background-color: $normalPink;
+            }
+        }
+    }
+
+    .hero__image-container {
+        
+        img {
+            position: absolute;
+            bottom: 340px;
+            right: 0;
+            width: 50%;
+        }
+    }
+
+    .hero__bg-design {
+    
+        img { 
+            position: absolute;
+            pointer-events: none;
+        }
+    
+        .ellipse-5 {
+            left: -120px;
+            top: -104px;
+        }
+    
+        .ellipse-43 {
+            left: 59px;
+            top: 100px;
+        }
+    
+        .ellipse-44 {
+            left: 1288px;
+            top: 687px;
+        }
+    
+        .rectangle-41 {
+            left: 608.21px;
+            top: 313px;
+        }
+        
+        .rectangle-42 {
+            left: 679.21px;
+            top: 599px;
+        }
+        
+        .rectangle-43 {
+            left: 919.21px;
+            top: 676px;
+        }
+    
+        .rectangle-44 {
+            left: 43.87px;
+            top: 359.51px;
+        }
+    
+        .rectangle-45 {
+            left: 422.21px;
+            top: 553px;
+        }
+    
+        .rectangle-46 {
+            left: 849.76px;
+            top: 19px;
+        }
+    }
+}

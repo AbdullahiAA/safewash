@@ -1,0 +1,57 @@
+#contact-us {
+    background-color: white;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(137.03deg, rgba(255, 255, 255, 0.95) 47.28%, rgba(254, 150, 198, 0.95) 152.37%), url("../assets/img/BQ\ Safewash\ baby\ blurred\ out\ 2\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding-top: 260px;
+        padding-bottom: 250px;
+    }
+
+    .contact-us__img-container {
+        position: relative;
+
+        .contact-us__img {
+            width: 470px;
+            z-index: 3;
+        }
+
+        .contact-us__vector {
+            position: absolute;
+
+            &.green {
+                width: 470px;
+                left: -31px;
+                top: -13px;
+                z-index: 2;
+            }
+
+            &.pink {
+                top: -10px;
+                left: -35px;
+                width: 500px;
+                z-index: 1;
+            }
+        }
+    }
+
+    .contact-us__content {
+        h3 {
+            text-align: left;
+            color: #795A69;
+            margin-bottom: 16px;
+        }
+
+        p {
+            line-height: 204.18%;
+            color: #776E70;
+            margin-bottom: 30px;
+        }
+    }
+}

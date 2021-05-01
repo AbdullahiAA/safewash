@@ -1,0 +1,585 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../assets/fonts/gilroy-extrabold.otf") format("otf"), url("../assets/fonts/gilroy-extrabold.woff2") format("woff2"), url("../assets/fonts/gilroy-extrabold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 204.18%;
+  color: #21A4C4;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.middle-text {
+  max-width: 816px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 161.68%;
+  color: #776E70;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 10px;
+}
+
+.btn {
+  padding: 16px 21px;
+  background-color: #6EB245;
+  border-radius: 13px 13px 13px 0px;
+  text-decoration: none;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 10px 0px;
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+}
+
+header {
+  height: 96px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+header .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 100px;
+}
+
+header .header__logo img {
+  width: 66.64px;
+  height: 67.56px;
+}
+
+header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 72px;
+          column-gap: 72px;
+}
+
+header li a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19px;
+  color: #483D3F;
+}
+
+@font-face {
+  font-family: 'cocon';
+  src: url("../assets/fonts/cocon-bold.otf") format("otf"), url("../assets/fonts/cocon-bold.woff2") format("woff2"), url("../assets/fonts/cocon-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#hero {
+  height: 1123px;
+  position: relative;
+  padding-top: 96px;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(213.01deg, #FFFFFF 4.13%, rgba(254, 150, 198, 0.5) 80.31%);
+}
+
+#hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 96px;
+  padding-bottom: 100px;
+}
+
+#hero .hero__content h1 {
+  font-family: 'cocon', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 70px;
+  color: #FE96C6;
+  max-width: 701px;
+  margin-bottom: 26px;
+}
+
+#hero .hero__content h2 {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 70px;
+  color: transparent;
+  -webkit-text-stroke: 1px #FE96C6;
+  max-width: 678px;
+  margin-bottom: 23px;
+}
+
+#hero .hero__carousels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 15px;
+  margin-top: 34px;
+}
+
+#hero .hero__carousels .carousel {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #FE96C6;
+  border-radius: 50%;
+}
+
+#hero .hero__carousels .carousel.active {
+  background-color: #FE96C6;
+}
+
+#hero .hero__image-container img {
+  position: absolute;
+  bottom: 340px;
+  right: 0;
+  width: 50%;
+}
+
+#hero .hero__bg-design img {
+  position: absolute;
+  pointer-events: none;
+}
+
+#hero .hero__bg-design .ellipse-5 {
+  left: -120px;
+  top: -104px;
+}
+
+#hero .hero__bg-design .ellipse-43 {
+  left: 59px;
+  top: 100px;
+}
+
+#hero .hero__bg-design .ellipse-44 {
+  left: 1288px;
+  top: 687px;
+}
+
+#hero .hero__bg-design .rectangle-41 {
+  left: 608.21px;
+  top: 313px;
+}
+
+#hero .hero__bg-design .rectangle-42 {
+  left: 679.21px;
+  top: 599px;
+}
+
+#hero .hero__bg-design .rectangle-43 {
+  left: 919.21px;
+  top: 676px;
+}
+
+#hero .hero__bg-design .rectangle-44 {
+  left: 43.87px;
+  top: 359.51px;
+}
+
+#hero .hero__bg-design .rectangle-45 {
+  left: 422.21px;
+  top: 553px;
+}
+
+#hero .hero__bg-design .rectangle-46 {
+  left: 849.76px;
+  top: 19px;
+}
+
+#features {
+  background-color: white;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(131.41deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 15.33%, rgba(255, 210, 231, 0.9) 35.21%, rgba(254, 168, 208, 0.9) 51.11%, rgba(254, 166, 207, 0.9) 69.85%, rgba(255, 255, 255, 0.9) 98.24%, rgba(255, 255, 255, 0.9) 109.03%), url("../assets/img/BQ Safewash baby blurred out 2 1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  margin-top: -340px;
+}
+
+#features .container {
+  padding-top: 144px;
+}
+
+#features .features__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 56px;
+  margin-top: 70px;
+}
+
+#features .features__body div:first-child {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+#features .features__body div:last-child {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+#features .features__item img {
+  margin-bottom: 8px;
+  width: 54px;
+  height: 54px;
+}
+
+#features .features__item h4 {
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+#features .features__item:nth-child(2) h4 {
+  color: #21A4C4;
+}
+
+#features .features__item:nth-child(3) h4 {
+  color: #6EB245;
+}
+
+#features .features__item:nth-child(4) h4 {
+  color: #02998A;
+}
+
+#features .features__item:nth-child(5) h4 {
+  color: #9D3E89;
+}
+
+#features .features__item p {
+  color: #483D3F;
+  max-width: 504px;
+  line-height: 161.68%;
+  font-weight: 600;
+}
+
+#about-us .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+#about-us .about-us__content h3 {
+  text-align: left;
+  color: #795A69;
+  margin-bottom: 16px;
+}
+
+#about-us .about-us__content p {
+  line-height: 204.18%;
+  color: #776E70;
+  margin-bottom: 30px;
+}
+
+#about-us .about-us__img-container {
+  position: relative;
+}
+
+#about-us .about-us__img-container .about-us__img {
+  height: 650px;
+}
+
+#about-us .about-us__img-container .about-us__img-vector {
+  position: absolute;
+  left: -5px;
+  bottom: 0;
+  width: 500px;
+  z-index: -1;
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  font-style: normal;
+  font-weight: normal;
+  src: local("BR Firma Bold"), url("BR Firma Bold.woff") format("woff");
+}
+
+#top-distributors {
+  text-align: center;
+}
+
+#top-distributors .container {
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+#top-distributors .top-distributors__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 130px;
+  margin-bottom: 75px;
+  position: relative;
+}
+
+#top-distributors .top-distributors__cards .top-distributors__blur-bg {
+  position: absolute;
+  width: 288px;
+  height: 287px;
+  left: 186px;
+  top: 18px;
+  z-index: -1;
+  background: #FE96C6;
+  -webkit-filter: blur(451px);
+          filter: blur(451px);
+}
+
+#top-distributors .top-distributors__cards .top-distributors__bubbles {
+  position: absolute;
+  left: 10px;
+}
+
+#top-distributors .top-distributors__cards .top-distributors__bubbles img {
+  position: absolute;
+  background-blend-mode: screen;
+  mix-blend-mode: screen;
+  z-index: 1;
+}
+
+#top-distributors .top-distributors__cards .top-distributors__bubbles img:nth-child(1) {
+  left: 217px;
+}
+
+#top-distributors .top-distributors__cards .top-distributors__bubbles img:nth-child(2) {
+  left: 217px;
+}
+
+#top-distributors .top-distributors__cards .top-distributors__bubbles img:nth-child(3) {
+  left: 217px;
+}
+
+#top-distributors .distributors-card__item {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 293px;
+  width: 100%;
+  height: 360px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 4px 31px #F4F4F9;
+          box-shadow: 0px 4px 31px #F4F4F9;
+}
+
+#top-distributors .distributors-card__item:nth-child(1) .distributor-img {
+  border: 4px solid #6EB245;
+}
+
+#top-distributors .distributors-card__item:nth-child(2) .distributor-img {
+  border: 4px solid #21A4C4;
+}
+
+#top-distributors .distributors-card__item:nth-child(3) .distributor-img {
+  border: 4px solid #DB99CD;
+}
+
+#top-distributors .distributors-card__item .distributor-img {
+  border-radius: 50%;
+  width: 188px;
+  height: 188px;
+  position: absolute;
+  top: -76px;
+  left: 45%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#top-distributors .distributors-card__item img {
+  width: 102%;
+  height: 102%;
+  position: relative;
+  left: 8px;
+}
+
+#top-distributors .distributors-card__item h4 {
+  color: #6EB245;
+  font-family: "BR Firma", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 204.18%;
+  margin-bottom: 12px;
+  margin-top: 100px;
+}
+
+#top-distributors .distributors-card__item p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #776E70;
+  line-height: 161.68%;
+  margin-bottom: 12px;
+}
+
+#top-distributors .distributors-card__item a {
+  display: block;
+  text-decoration: none;
+  background: #21A4C4;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 8px 26px;
+  margin: 0px 220px;
+}
+
+#top-distributors .btn {
+  margin: 34px 0px;
+}
+
+#contact-us {
+  background-color: white;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(137.03deg, rgba(255, 255, 255, 0.95) 47.28%, rgba(254, 150, 198, 0.95) 152.37%), url("../assets/img/BQ Safewash baby blurred out 2 1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+#contact-us .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding-top: 260px;
+  padding-bottom: 250px;
+}
+
+#contact-us .contact-us__img-container {
+  position: relative;
+}
+
+#contact-us .contact-us__img-container .contact-us__img {
+  width: 470px;
+  z-index: 3;
+}
+
+#contact-us .contact-us__img-container .contact-us__vector {
+  position: absolute;
+}
+
+#contact-us .contact-us__img-container .contact-us__vector.green {
+  width: 470px;
+  left: -31px;
+  top: -13px;
+  z-index: 2;
+}
+
+#contact-us .contact-us__img-container .contact-us__vector.pink {
+  top: -10px;
+  left: -35px;
+  width: 500px;
+  z-index: 1;
+}
+
+#contact-us .contact-us__content h3 {
+  text-align: left;
+  color: #795A69;
+  margin-bottom: 16px;
+}
+
+#contact-us .contact-us__content p {
+  line-height: 204.18%;
+  color: #776E70;
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=styles.css.map */
