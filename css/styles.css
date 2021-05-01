@@ -590,7 +590,7 @@ header li a {
 
 #testimonies .testimonies__cards {
   margin-top: 38px;
-  margin-bottom: 38px;
+  margin-bottom: 57px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -700,5 +700,29 @@ header li a {
 
 #testimonies .testimony-item__content p {
   font-size: 14px;
+}
+
+#testimonies .testimonies__video {
+  max-width: 100%;
+  border: 1px solid firebrick;
+  position: relative;
+}
+
+#testimonies .testimonies__video img {
+  display: block;
+  max-width: 100%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#testimonies .testimonies__video .absolute-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: initial;
 }
 /*# sourceMappingURL=styles.css.map */
