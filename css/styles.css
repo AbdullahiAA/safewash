@@ -637,28 +637,21 @@ header li a {
 }
 
 #testimonies .testimony-item__header {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 55px 1fr;
-      grid-template-columns: 55px 1fr;
-  -ms-grid-rows: (30px)[2];
-      grid-template-rows: repeat(2, 30px);
+  position: relative;
   margin-bottom: 34px;
 }
 
-#testimonies .testimony-item__header .profile-photo {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
+#testimonies .profile-photo {
+  border: 10px solid deeppink;
   width: 95px;
   height: 95px;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
   top: -52px;
   left: -49px;
 }
 
-#testimonies .testimony-item__header .profile-photo img {
+#testimonies .profile-photo img {
   width: 104%;
   height: 104%;
   position: relative;
@@ -666,18 +659,23 @@ header li a {
   top: 2px;
 }
 
-#testimonies .testimony-item__header h4 {
+#testimonies .profile-details {
+  margin-left: 55px;
+}
+
+#testimonies .profile-details h4 {
   color: #21A4C4;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 161.68%;
+  margin-bottom: 6px;
   word-wrap: unset;
   word-break: keep-all;
 }
 
-#testimonies .testimony-item__header p {
+#testimonies .profile-details p {
   font-size: 12px;
 }
 
@@ -704,7 +702,6 @@ header li a {
 
 #testimonies .testimonies__video {
   max-width: 100%;
-  border: 1px solid firebrick;
   position: relative;
 }
 
@@ -724,5 +721,21 @@ header li a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: initial;
+}
+
+#testimonies .testimonies__video .play-btn-container:hover {
+  opacity: .95;
+}
+
+#testimonies .testimonies__video .play-btn-background, #testimonies .testimonies__video .play-btn {
+  cursor: pointer;
+}
+
+#testimonies .testimonies__video .play-btn-background {
+  width: 17.9%;
+}
+
+#testimonies .testimonies__video .play-btn {
+  width: 4.09%;
 }
 /*# sourceMappingURL=styles.css.map */
