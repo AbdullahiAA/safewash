@@ -5,7 +5,13 @@
     url('../assets/fonts/gilroy-extrabold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'BR Firma';
+    src: local('BR Firma Bold'), url('BR Firma Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
 }
 
 *, *::after, *::before {

@@ -57,6 +57,7 @@
             width: 16px;
             border: 1px solid $normalPink;
             border-radius: 50%;
+            cursor: pointer;
 
             &.active {
                 background-color: $normalPink;
