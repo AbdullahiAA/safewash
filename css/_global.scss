@@ -73,3 +73,15 @@ h3 {
     color: white;
     cursor: pointer;
 }
+
+@media screen and (max-width: 550px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 990   px) {
+    .container {
+        width: 90%;
+    }
+}

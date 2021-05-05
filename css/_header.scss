@@ -31,5 +31,13 @@ header {
         font-size: 14px;
         line-height: 19px;
         color: $darkGray;
+
+        &:hover {
+            color: $normalPink;
+        }
+
+        &.active {
+            font-weight: 700;
+        }
     }
 }
