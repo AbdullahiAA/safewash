@@ -133,5 +133,26 @@
         .play-btn {
             width: 4.09%;
         }
+
+        .testimonies__video-mobile {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .testimonies__cards {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .testimonies__video {
+            .testimonies__video-mobile {
+                display: block;
+            }
+
+            .testimonies__video-desktop {
+                display: none;
+            }
+        }
     }
 }

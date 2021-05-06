@@ -129,4 +129,12 @@
     .btn {
         margin: 34px 0px;
     }
+
+    @media screen and (max-width: 550px) {
+        .top-distributors__cards {
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+        }
+    }
 }

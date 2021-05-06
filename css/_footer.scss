@@ -18,7 +18,6 @@ footer {
                 font-family: "BR Firma", sans-serif;
                 font-weight: bold;
                 line-height: 204.18%;
-                // color: $blue;
             }
             
             ul {
@@ -67,15 +66,10 @@ footer {
             grid-template-columns: auto auto auto;
             grid-template-rows: auto auto;
             row-gap: 50px;
-            justify-content: spce-between;
 
             .footer__item:first-of-type {
                 grid-column: 1/4;
                 grid-row: 1/2;
-            }
-
-            .social-icons {
-                gap: 10px;
             }
         }
     }
@@ -87,6 +81,10 @@ footer {
             .footer__item:first-of-type {
                 grid-column: 2/3;
                 grid-row: 2/3;
+            }
+
+            .social-icons {
+                gap: 10px;
             }
         }
     }
