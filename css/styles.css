@@ -72,6 +72,16 @@ h3 {
   cursor: pointer;
 }
 
+@media screen and (max-width: 990px) {
+  h3 {
+    font-size: 32px;
+    line-height: 161.18%;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 610px) {
   h3 {
     font-size: 26px;
@@ -82,16 +92,6 @@ h3 {
   }
   .middle-text {
     font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 990px) {
-  h3 {
-    font-size: 32px;
-    line-height: 161.18%;
-  }
-  .container {
-    width: 90%;
   }
 }
 
@@ -322,6 +322,11 @@ header li a.active {
   grid-row: 3/4;
 }
 
+#features .features__body-img img {
+  max-width: 500px;
+  width: 100%;
+}
+
 #features .features__item img {
   margin-bottom: 8px;
   width: 54px;
@@ -354,6 +359,26 @@ header li a.active {
   max-width: 504px;
   line-height: 161.68%;
   font-weight: 600;
+}
+
+@media screen and (max-width: 690px) {
+  #features .features__body {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    text-align: center;
+  }
+  #features .features__body div:first-child {
+    grid-row: initial;
+  }
+  #features .features__body div:last-child {
+    grid-column: initial;
+    grid-row: initial;
+  }
+  #features .features__item p {
+    max-width: none;
+  }
 }
 
 #about-us .container {
@@ -400,6 +425,34 @@ header li a.active {
   z-index: -1;
 }
 
+@media screen and (max-width: 790px) {
+  #about-us .container {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about-us .about-us__img-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #about-us .about-us__content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #about-us .about-us__content h3 {
+    text-align: center;
+  }
+  #about-us .about-us__content p {
+    font-size: 14px;
+  }
+}
+
 #top-distributors {
   text-align: center;
 }
@@ -420,7 +473,10 @@ header li a.active {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
+  row-gap: 150px;
   margin-top: 130px;
   margin-bottom: 75px;
   position: relative;
@@ -466,7 +522,7 @@ header li a.active {
   background-color: white;
   padding: 30px;
   border-radius: 12px;
-  max-width: 293px;
+  max-width: 263px;
   width: 100%;
   height: 360px;
   position: relative;
@@ -552,19 +608,6 @@ header li a.active {
   margin: 34px 0px;
 }
 
-@media screen and (max-width: 550px) {
-  #top-distributors .top-distributors__cards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 100px;
-  }
-}
-
 #contact-us {
   background-color: white;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(137.03deg, rgba(255, 255, 255, 0.95) 47.28%, rgba(254, 150, 198, 0.95) 152.37%), url("../assets/img/BQ Safewash baby blurred out 2 1.png");
@@ -594,7 +637,7 @@ header li a.active {
 }
 
 #contact-us .contact-us__img-container .contact-us__img {
-  width: 470px;
+  max-width: 470px;
   z-index: 3;
 }
 
@@ -603,7 +646,7 @@ header li a.active {
 }
 
 #contact-us .contact-us__img-container .contact-us__vector.green {
-  width: 470px;
+  max-width: 470px;
   left: -31px;
   top: -13px;
 }
@@ -611,7 +654,13 @@ header li a.active {
 #contact-us .contact-us__img-container .contact-us__vector.pink {
   top: -10px;
   left: -35px;
-  width: 500px;
+  max-width: 500px;
+}
+
+#contact-us .contact-us__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #contact-us .contact-us__content h3 {
@@ -624,6 +673,26 @@ header li a.active {
   line-height: 204.18%;
   color: #776E70;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 690px) {
+  #contact-us .container {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact-us .contact-us__img-container {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #contact-us .contact-us__content h3 {
+    text-align: center;
+  }
+  #contact-us .contact-us__content p {
+    font-size: 14px;
+  }
 }
 
 #testimonies {

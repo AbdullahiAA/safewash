@@ -27,6 +27,13 @@
         }
     }
 
+    .features__body-img {
+        img {
+            max-width: 500px;
+            width: 100%;
+        }
+    }
+
     .features__item {
         img {
             margin-bottom: 8px;
@@ -60,6 +67,29 @@
             max-width: 504px;
             line-height: 161.68%;
             font-weight: 600;
+        }
+    }
+
+    @media screen and (max-width: 690px) {
+        .features__body {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            text-align: center;
+
+            div:first-child {
+                grid-row: initial;
+            }
+    
+            div:last-child {
+                grid-column: initial;
+                grid-row: initial;
+            }
+        }
+
+        .features__item {
+            p {
+                max-width: none;
+            }
         }
     }
 }

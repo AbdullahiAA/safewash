@@ -16,32 +16,36 @@
 
     .contact-us__img-container {
         position: relative;
+        // transform: scale(1);
+        // flex: .5;
 
         .contact-us__img {
-            width: 470px;
+            max-width: 470px;
+            // width: 100%;
             z-index: 3;
         }
 
         .contact-us__vector {
             position: absolute;
+            // width: 100%;
 
             &.green {
-                width: 470px;
+                max-width: 470px;
                 left: -31px;
                 top: -13px;
-                // z-index: 2;
             }
 
             &.pink {
                 top: -10px;
                 left: -35px;
-                width: 500px;
-                // z-index: 1;
+                max-width: 500px;
             }
         }
     }
 
     .contact-us__content {
+        flex: 1;
+
         h3 {
             text-align: left;
             color: #795A69;
@@ -52,6 +56,28 @@
             line-height: 204.18%;
             color: #776E70;
             margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width: 690px) {
+        .container {
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .contact-us__img-container {
+            transform: scale(.8);
+            // flex: .5;
+        }
+
+        .contact-us__content {
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                font-size: 14px;
+            }
         }
     }
 }

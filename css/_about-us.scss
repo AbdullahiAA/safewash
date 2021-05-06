@@ -37,4 +37,29 @@
             z-index: -1;
         }
     }
+
+    @media screen and (max-width: 790px) {
+        .container {
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .about-us__img-container {
+            order: 1;
+            transform: scale(.8);
+            // flex: .5;
+        }
+
+        .about-us__content {
+            order: 2;
+            
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
 }
