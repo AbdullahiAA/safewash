@@ -845,13 +845,29 @@ footer .footer__bottom p {
   footer .footer__top .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
     row-gap: 50px;
-    -webkit-column-gap: 50px;
-            column-gap: 50px;
+    -webkit-box-pack: spce-between;
+        -ms-flex-pack: spce-between;
+            justify-content: spce-between;
+  }
+  footer .footer__top .container .footer__item:first-of-type {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  footer .footer__top .container {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
   }
   footer .footer__top .container .footer__item:first-of-type {
     -ms-grid-column: 2;
