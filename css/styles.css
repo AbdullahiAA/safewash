@@ -862,6 +862,9 @@ footer .footer__bottom p {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
+  footer .footer__top .container .social-icons {
+    gap: 10px;
+  }
 }
 
 @media screen and (max-width: 550px) {
