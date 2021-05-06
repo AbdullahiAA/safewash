@@ -67,6 +67,7 @@ footer {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             row-gap: 50px;
+            column-gap: 50px;
 
             .footer__item:first-of-type {
                 grid-column: 2/3;
