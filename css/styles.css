@@ -21,6 +21,9 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: proximity;
+      scroll-snap-type: proximity;
 }
 
 h3 {
@@ -133,11 +136,19 @@ header nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-column-gap: 72px;
           column-gap: 72px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header li a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-decoration: none;
   font-size: 14px;
   line-height: 19px;
@@ -150,6 +161,148 @@ header li a:hover {
 
 header li a.active {
   font-weight: 700;
+}
+
+header .menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 890px) {
+  header nav ul {
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  header .container {
+    gap: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .header__logo img {
+    width: 45.59px;
+    height: 46.22px;
+  }
+  header nav {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(254, 150, 198, 0.3)), to(rgba(255, 255, 255, 0))), #FFFFFF;
+    background: linear-gradient(180deg, rgba(254, 150, 198, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+    padding-top: 136px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh !important;
+    width: 100vw !important;
+    max-width: 375px;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 66px;
+    overflow: hidden;
+  }
+  header nav ul li a {
+    font-weight: 600;
+    display: block;
+  }
+  header .menu-icon {
+    position: absolute;
+    right: 22px;
+    top: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    gap: 4.29px;
+    z-index: 100;
+    cursor: pointer;
+  }
+  header .menu-icon .bar {
+    display: block;
+    height: 2.13px;
+    background-color: #000100;
+    border-radius: 40px;
+  }
+  header .menu-icon .bar.one {
+    width: 14px;
+  }
+  header .menu-icon .bar.two {
+    width: 20px;
+  }
+  header .menu-icon .bar.three {
+    width: 10px;
+  }
+  header .menu-icon.active {
+    gap: 0;
+  }
+  header .menu-icon.active .bar {
+    position: absolute;
+  }
+  header .menu-icon.active .bar.one {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 20px;
+  }
+  header .menu-icon.active .bar.two {
+    display: none;
+  }
+  header .menu-icon.active .bar.three {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    width: 20px;
+  }
+  header .bg-designs span {
+    position: absolute;
+    -webkit-filter: blur(1.5px);
+            filter: blur(1.5px);
+    border-radius: 3px;
+    border: 1px solid #21A4C4;
+  }
+  header .bg-designs span.one {
+    width: 21px;
+    height: 21px;
+    left: 43.21px;
+    top: 104px;
+    -webkit-transform: rotate(23deg);
+            transform: rotate(23deg);
+  }
+  header .bg-designs span.two {
+    width: 51.18px;
+    height: 51.18px;
+    left: 63.87px;
+    top: 357.51px;
+    -webkit-transform: rotate(105.31deg);
+            transform: rotate(105.31deg);
+  }
+  header .bg-designs span.three {
+    width: 21px;
+    height: 21px;
+    left: 314.21px;
+    top: 344px;
+    -webkit-transform: rotate(23deg);
+            transform: rotate(23deg);
+  }
+  header .bg-designs span.four {
+    width: 53px;
+    height: 53px;
+    left: 131px;
+    top: 183px;
+    border-radius: 50%;
+    border: 1px solid #FE96C6;
+  }
 }
 
 @font-face {

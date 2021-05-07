@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="./assets/img/safewash_logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/safewash_logo.png" type="image/x-icon">
 
     <title>Safewash</title>
 
@@ -25,7 +25,7 @@
             <div class="container">
                 <!-- Site Logo -->
                 <div class="header__logo">
-                    <img src="./assets/img/safewash_logo.svg" alt="Safe Wash Logo">
+                    <img src="./assets/img/safewash_logo.png" alt="Safe Wash Logo">
                 </div>
 
                 <!-- Navigation Links -->
@@ -36,7 +36,23 @@
                         <li><a href="#">Become a Distributor</a></li>
                         <li><a href="#contact-us">Contact Us</a></li>
                     </ul>
-                </nav>                
+                    
+                    <!-- Harmburger Menu Icon -->
+                    <div class="menu-icon active">
+                        <span class="bar one"></span>
+                        <span class="bar two"></span>
+                        <span class="bar three"></span>
+                    </div>
+
+                    <!-- Background Designs -->
+                    <div class="bg-designs">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                        <span class="three"></span>
+                        <span class="four"></span>
+                    </div>
+
+                </nav> 
             </div>
         </header>
         
@@ -45,7 +61,7 @@
                     
             <!-- Hero Section -->
             <section id="hero">
-                <!-- Background Image Designs -->
+                <!-- Background Designs -->
                 <div class="hero__bg-design">
                     <img src="./assets/img/hero-bg-ellipse 5.svg" alt="Background Image Design" class="ellipse-5">
                     <img src="./assets/img/hero-bg-ellipse 43.svg" alt="Background Image Design" class="ellipse-43">
@@ -413,10 +429,13 @@
 
             <!-- Footer Bottom -->
             <div class="footer__bottom">
-                <p class="copyright">&copy; bqsafewash 2021 {curentYear}</p>
+                <p class="copyright">&copy; bqsafewash <span class="current-year"></span> </p>
             </div>
         </footer>
 
     </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/copyright.js"></script>
 </body>
 </html>

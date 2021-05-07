@@ -1,5 +1,6 @@
 header {
     height: 96px;
+    // background-color: teal;
     position: absolute;
     top: 0;
     right: 0;
@@ -23,10 +24,13 @@ header {
         list-style: none;
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         column-gap: 72px;
+        align-items: center;
     }
-
+    
     li a {
+        flex: 1;
         text-decoration: none;
         font-size: 14px;
         line-height: 19px;
@@ -38,6 +42,147 @@ header {
 
         &.active {
             font-weight: 700;
+        }
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    
+    @media screen and (max-width: 890px) {
+        nav ul {
+            gap: 32px;
+        }
+    }
+
+    @media screen and (max-width: 690px) {
+        .container {
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .header__logo img {
+            width: 45.59px;
+            height: 46.22px;
+        }
+
+        nav {
+            // transform: translateX(-375px);
+            background: linear-gradient(180deg, rgba(254, 150, 198, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+            padding-top: 136px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100vh !important;
+            width: 100vw !important;
+            max-width: 375px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 66px;
+                overflow: hidden;
+
+                li a {
+                    font-weight: 600;
+                    display: block;
+                }
+            }
+        }
+
+        .menu-icon {
+            position: absolute;
+            right: 22px;
+            top: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 4.29px;
+            z-index: 100;
+            cursor: pointer;
+            
+            .bar {
+                display: block;
+                height: 2.13px;
+                background-color:#000100;
+                ;
+                border-radius: 40px;
+
+                &.one {
+                    width: 14px;
+                }
+
+                &.two {
+                    width: 20px;
+                }
+
+                &.three {
+                    width: 10px;
+                }
+            }
+
+            &.active {
+                gap: 0;
+                .bar {
+                    position: absolute;
+                    &.one {
+                        transform: rotate(45deg);
+                        width: 20px;
+                    }
+                    &.two {
+                        display: none;
+                    }
+                    &.three {
+                        transform: rotate(-45deg);
+                        width: 20px;
+                    }
+                }
+            }
+        }
+
+        .bg-designs {
+            span {
+                position: absolute;
+                filter: blur(1.5px);
+                border-radius: 3px;
+                border: 1px solid #21A4C4;
+
+                &.one {
+                    width: 21px;
+                    height: 21px;
+                    left: 43.21px;
+                    top: 104px;
+                    transform: rotate(23deg);
+                }
+
+                &.two {
+                    width: 51.18px;
+                    height: 51.18px;
+                    left: 63.87px;
+                    top: 357.51px;
+                    transform: rotate(105.31deg);
+                }
+
+                &.three {
+                    width: 21px;
+                    height: 21px;
+                    left: 314.21px;
+                    top: 344px;
+                    transform: rotate(23deg);
+                }
+
+                &.four {
+                    width: 53px;
+                    height: 53px;
+                    left: 131px;
+                    top: 183px;
+                    border-radius: 50%;
+                    border: 1px solid #FE96C6;
+                }
+            }
         }
     }
 }
