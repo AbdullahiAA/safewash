@@ -9,6 +9,7 @@
     }
 
     .about-us__content {
+        flex: 2;
         h3 {
             text-align: left;
             color: #795A69;
@@ -24,21 +25,25 @@
 
     .about-us__img-container {
         position: relative;
+        flex: 1;
 
         .about-us__img {
-            height: 650px;
+            // height: 650px;
+            // max-width: 470px;
+            width: 100%;
         }
 
         .about-us__img-vector {
             position: absolute;
             left: -5px;
             bottom: 0;
-            width: 500px;
+            // max-width: 500px;
+            width: 100%;
             z-index: -1;
         }
     }
 
-    @media screen and (max-width: 790px) {
+    @media screen and (max-width: 690px) {
         .container {
             text-align: center;
             flex-direction: column;
