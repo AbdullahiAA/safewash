@@ -11,39 +11,29 @@
         gap: 20px;
         padding-top: 200px;
         padding-bottom: 120px;
-        align-items: center;
-        // justify-content: center;
     }
 
     .contact-us__img-container {
-        // display: flex;
         position: relative;
         
         flex: 1;
 
         .contact-us__img {
-            // max-width: 470px;
             width: 100%;
-            // z-index: 3;
-            // position: absolute;
         }
 
         .contact-us__vector {
             position: absolute;
-            width: 100%;
 
             &.green {
-                // max-width: 470px;
                 left: -31px;
                 top: -13px;
                 width: 102.09%;
             }
             
             &.pink {
-                top: 0px;
                 left: -35px;
                 width: 105.69%;
-                // max-width: 500px;
             }
         }
     }
@@ -71,8 +61,7 @@
         }
 
         .contact-us__img-container {
-            left: 50%;
-            transform: scale(.8) translateX(-50%) !important;
+            transform: scale(.8);
         }
 
         .contact-us__content {
