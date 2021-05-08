@@ -1,6 +1,8 @@
 #testimonies {
-    padding-top: 288px;
-    padding-bottom: 224px;
+    .container {
+        padding-top: 288px;
+        padding-bottom: 224px;
+    }
 
     .testimonies__cards {
         margin-top: 38px;
@@ -141,12 +143,22 @@
     }
 
     @media screen and (max-width: 610px) {
+        .container {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
         .testimonies__cards {
             display: grid;
             grid-template-rows: repeat(3, 1fr);
             justify-content: center;
-            gap: 60px;
+            gap: 100px;
+            margin-top: 85px;
             margin-bottom: 85px;
+        }
+
+        .testimony-item__header {
+            margin-bottom: 44px;
         }
 
         .testimonies__video {

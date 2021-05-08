@@ -57,6 +57,8 @@ header {
     }
 
     @media screen and (max-width: 690px) {
+        height: 76px;
+        
         .container {
             gap: 20px;
             justify-content: space-between;

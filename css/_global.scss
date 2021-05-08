@@ -18,13 +18,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    z-index: 2;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     // font-size: 16px;
     scroll-behavior: smooth;
-    scroll-snap-type: proximity;
+    transition: all 5.5s ease-out;
+
+    &.navbar-open {
+        overflow: hidden;
+        // position: fixed;
+    }
 }
 
 h3 {
@@ -90,7 +96,7 @@ h3 {
 @media screen and (max-width: 610px) {
     h3 {
         font-size: 26px;
-        line-height: 161.18%;
+        line-height: 41.91px;
     }
 
     .container {
@@ -99,5 +105,6 @@ h3 {
 
     .middle-text {
         font-size: 14px;
+        line-height: 28px;
     }
 }
