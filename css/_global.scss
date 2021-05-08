@@ -18,18 +18,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // z-index: 2;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    // font-size: 16px;
-    scroll-behavior: smooth;
     transition: overflow 5.5s ease-out;
 
     &.navbar-open {
         overflow: hidden;
-        // position: fixed;
     }
 }
 
@@ -80,6 +76,11 @@ h3 {
     display: inline-block;
     color: white;
     cursor: pointer;
+
+    &:hover {
+        opacity: .95;
+        box-shadow: 0 0 10px rgba(109, 108, 108, 0.3);
+    }
 }
 
 @media screen and (max-width: 990px) {

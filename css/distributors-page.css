@@ -21,7 +21,6 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  scroll-behavior: smooth;
   -webkit-transition: overflow 5.5s ease-out;
   transition: overflow 5.5s ease-out;
 }
@@ -77,6 +76,12 @@ h3 {
   display: inline-block;
   color: white;
   cursor: pointer;
+}
+
+.btn:hover {
+  opacity: .95;
+  -webkit-box-shadow: 0 0 10px rgba(109, 108, 108, 0.3);
+          box-shadow: 0 0 10px rgba(109, 108, 108, 0.3);
 }
 
 @media screen and (max-width: 990px) {
