@@ -68,7 +68,7 @@ header {
         }
 
         nav {
-            // transform: translateX(-375px);
+            // display: none;
             background: linear-gradient(180deg, rgba(254, 150, 198, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
             padding-top: 136px;
             position: fixed;
@@ -78,7 +78,15 @@ header {
             bottom: 0;
             height: 100vh !important;
             width: 100vw !important;
-            max-width: 375px;
+            // -webkit-clip-mask: circle(100px at 90% 10%);
+            // max-width: 375px;
+            transition: all 0.5s ease-out;
+            transform: translateX(-100%);
+
+            &.open {
+                transform: translateX(0%);
+            }
+            
 
             ul {
                 display: flex;
@@ -94,22 +102,26 @@ header {
         }
 
         .menu-icon {
-            position: absolute;
-            right: 22px;
-            top: 32px;
+            position: relative;
+            // right: 5%;
+            // top: 5%;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             gap: 4.29px;
             z-index: 100;
             cursor: pointer;
+            // background-color: black;
+            // border: 1px solid chocolate;
+            // width: fit-content;
+            // height: fit-content;
             
             .bar {
                 display: block;
                 height: 2.13px;
                 background-color:#000100;
-                ;
                 border-radius: 40px;
+                transition: all 0.3s ease-out;
 
                 &.one {
                     width: 14px;
@@ -126,8 +138,10 @@ header {
 
             &.active {
                 gap: 0;
+
                 .bar {
                     position: absolute;
+
                     &.one {
                         transform: rotate(45deg);
                         width: 20px;

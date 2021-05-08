@@ -195,7 +195,14 @@ header .menu-icon {
     bottom: 0;
     height: 100vh !important;
     width: 100vw !important;
-    max-width: 375px;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  header nav.open {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
   header nav ul {
     display: -webkit-box;
@@ -213,9 +220,7 @@ header .menu-icon {
     display: block;
   }
   header .menu-icon {
-    position: absolute;
-    right: 22px;
-    top: 32px;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -235,6 +240,8 @@ header .menu-icon {
     height: 2.13px;
     background-color: #000100;
     border-radius: 40px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
   header .menu-icon .bar.one {
     width: 14px;

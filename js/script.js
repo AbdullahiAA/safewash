@@ -1,5 +1,7 @@
 let menuIcon = document.querySelector(".menu-icon")
+let nav = document.querySelector("nav")
 
-menuIcon.addEventListener("click", (e) => {
-    console.log(e.target.style)
+menuIcon.addEventListener("click", () => {
+    nav.classList.toggle('open');
+    menuIcon.classList.toggle('active');
 })
