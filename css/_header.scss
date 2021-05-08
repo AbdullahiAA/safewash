@@ -1,11 +1,16 @@
 header {
     height: 96px;
-    // background-color: teal;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 10;
+    transition: all 0.2s linear;
+    
+    &.on-scroll {
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
 
     .container {
         height: 100%;

@@ -50,6 +50,8 @@
         flex-wrap: nowrap;
         gap: 15px;
         margin-top: 34px;
+        position: sticky;
+        top: 0;
 
         .carousel {
             display: inline-block;

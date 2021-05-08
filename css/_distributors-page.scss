@@ -1,0 +1,157 @@
+.find-distributors {
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+
+.find-distributors__header {
+    margin-bottom: 25px;
+
+    h4 {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 45px;
+        color: #795A69;
+        display: inline;
+        margin-right: 15px;
+    }
+
+    select {
+        width: 112px;
+        height: 34px;
+        border: 0.5px solid #C4C4C4;
+        border-radius: 8px;
+        outline: none;
+        font-size: 14px;
+        line-height: 19px;
+        color: #C4C4C4;
+    }
+}
+
+.find-distributors__form {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+
+    select {
+        width: 300px;
+        padding: 20px 25px;
+        background: #F9FFF5;
+        outline: none;
+        border: 0.5px solid $green;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 31px;
+        color: #776E70;
+
+        option {
+            background-color: #F9FFF5;
+        }
+    }
+
+    .search-btn {
+        border: 0.5px solid $green;
+        border-radius: 12px;
+        font-family: 'Open Sans', sans-serif;
+        padding: 10px 85px;
+        height: 61px;
+    }
+}
+
+
+#top-distributors {
+    .container {
+        text-align: left;
+        padding-bottom: 200px;
+    }
+
+    h5 {
+        font-family: 'BR Firma';
+        font-style: italic;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 39px;
+        color: $darkGray;
+    }
+
+    .top-distributors__cards {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .more-distributors {
+        text-decoration: none;
+        font-family: 'BR Firma';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 33px;
+        color: $blue;
+        display: inline-block;
+        margin-right: auto;
+    }
+}
+
+.bg-design {
+    
+    img { 
+        position: absolute;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    .ellipse-5 {
+        left: -120px;
+        top: -104px;
+    }
+
+    .bg-img {
+        left: 926px;
+        top: -32px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .bg-design {
+        .bg-img {
+            left: 49px;
+            top: 0px;
+        }
+    }
+    .find-distributors {
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+
+    .find-distributors__header {
+        max-width: 85%;
+        margin-bottom: 45px;
+        h4 {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+
+    .find-distributors__form {
+        flex-direction: column;
+        gap: 30px;
+        justify-content: left;
+        align-items: left;
+
+        select {
+            width: 100%;
+        }
+
+        .search-btn {
+            padding: 16px 40px;
+            border-radius: 13px 13px 13px 0px;
+            margin-right: auto;
+        }
+    }
+
+    #top-distributors {
+        .container {
+            padding-bottom: 120px;
+        }
+    }
+}

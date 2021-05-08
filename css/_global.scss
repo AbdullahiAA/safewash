@@ -18,14 +18,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    z-index: 2;
+    // z-index: 2;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     // font-size: 16px;
     scroll-behavior: smooth;
-    transition: all 5.5s ease-out;
+    transition: overflow 5.5s ease-out;
 
     &.navbar-open {
         overflow: hidden;
